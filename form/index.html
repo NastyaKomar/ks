@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.."></script>
+    <script src="js/intlTelInput.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./images/g4t61xehfef21.png" alt="">
+        <form action="" class="registration" onsubmit="return false">
+            <p>Регистрация</p>
+            <label>Имя</label>
+            <input type="text" id="username" data-description="name" class="inp">
+            <label>Город</label>
+            <input type="text" id="city" data-description="city" class="inp">
+
+
+            <div class=cont>
+                <div><label>Индекс</label>
+                    <input type="text" name="index" data-description="index" id="index" class="inp">
+                </div>
+                <div>
+                    <label>Дата рождения</label>
+
+                    <input name="date" type="text" id="date" onfocus="(this.type='date')"
+                        onblur="if(!this.value)this.type='text'" data-description="date of birdth" class="inp">
+                </div>
+            </div>
+
+
+            <label>Email</label>
+            <input type="email" name="email" id="email" data-description="email" class="inp">
+            <label>Моб.телефон</label>
+            <input type="tel" id="phone" data-description="telephone" class="inp" />
+            <div class="cont">
+                <div><label>Пароль</label>
+                    <input type="password" id="password" placeholder="Введите пароль" name="password"
+                        data-description="password" class="inp">
+                    <a href="#" class="password-control in"></a>
+
+
+                </div>
+                <div>
+                    <label>Подвердить пароль</label>
+                    <input type="password" id="retype_password" data-description="confirm password"
+                        placeholder="Подтвердите пароль" name="retype_password" class="inp">
+                    <!-- <a href="#" class="password-control"></a> -->
+                </div>
+
+
+
+
+            </div>
+            <button class="knopka">Зарегистрироваться</button>
+            <div class="for">
+                <div></div>
+                <label class="checkbox-transform">
+                    <input type="checkbox" class="checkbox__input">
+                    <span class="checkbox__label"></span>
+                </label>
+                <div>
+                    <label>я принимаю пользовательское согласшение и политику конфиденциальности</label>
+                </div>
+
+
+
+
+
+        </form>
+    </div>
+    <div class="user_info">
+        
+
+
+
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+        body {
+            background-color: blueviolet;
+            position: relative;
+            margin: auto 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            left: 35%;
+            width: 500px;
+            height: 600px;
+        }
+        #date {
+            font-size: small;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(225, 230, 238);
+        }
+        #password, #retype_password{
+            background-color: rgb(225, 230, 238);
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            background-color: rgb(193, 151, 233);
+            
+        }
+
+        form {
+            position: absolute;
+            top: 10px;
+            left: 47%;
+            border: blueviolet 3px solid;
+            width: 260px;
+            height: 500px;
+            border-radius: 5px;
+            background-color: blueviolet;
+            padding: 5px;
+            align-items: normal;
+            flex-flow: column;
+            display: inline-block;
+        }
+
+        form p {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        form label {
+            text-align: left;
+            color: white;
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        input {
+            background-color: rgb(159, 85, 228);
+            border: rgb(178, 126, 226) 3px solid;
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+
+        .cont {
+            display: flex;
+            margin: 0 -5px;
+            position: relative;
+        }
+
+        .cont div {
+            width: 50%;
+            align-items: normal;
+            flex-flow: column;
+            display: inline-block;
+            display: flex;
+            column-gap: 30px;
+            flex: 1 1 auto;
+            margin: 0 5px;
+        }
+
+        button {
+            appearance: none;
+            border: 0;
+            border-radius: 8px;
+            background: #e90f8e;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 14px;
+            width: 100%;
+            margin-top: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button:hover {
+            background: #c564b8;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px #cbd6ee;
+        }
+
+        .password-control {
+            position: absolute;
+            top: 11px;
+            right: 6px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(/view.svg) 0 0 no-repeat;
+        }
+
+        .password-control.view {
+            background: url(/no-view.svg) 0 0 no-repeat;
+        }
+        .checkbox__label:before {
+            content: ' ';
+            display: block;
+            height: 1.7rem;
+            width: 1.7rem;
+            position:absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(193, 151, 233);
+        }
+
+        .checkbox__label:after {
+            content: ' ';
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border: .25rem solid  #e90f8e;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 100ms ease-in-out;
+        }
+
+        .checkbox__input:checked~.checkbox__label:after {
+            border-top-style: none;
+            border-right-style: none;
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            height: 1.25rem;
+            border-color:cornsilk;
+        }
+
+        .checkbox-transform {
+            position: relative;
+            font-size: 1.3em;
+            color: #666;
+            cursor: pointer;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .checkbox__label {
+            margin-left: 2rem;
+            line-height: .7
+        }
+
+        .for {
+            display: flex;
+            margin: 10px -5px;
+            justify-content: center;
+        }
+
+        .for div {
+            align-items: normal;
+            flex-flow: column;
+            display: inline-block;
+            display: flex;
+            column-gap: 10px;
+            flex: 1 1 auto;
+            margin: 0 5px;
+        }
+        .for label {
+            text-align: center;
+        }
+
+        .user_info {
+            position: fixed;
+            width: 200px;
+            height: 500px;
+            top: 0;
+            right: 0 px;
+            left: 15px;
+            color: blueviolet;
+            overflow-y: scroll;
+            background-color: #a4d0ec;
+            width: 300px;
+            height: 373px;
+
+        }
+        .user_info div{
+            position: relative;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
